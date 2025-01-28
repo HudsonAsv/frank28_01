@@ -1,4 +1,5 @@
 package controller;
+import model.LivroModel;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 import util.HibernateUtil;
@@ -29,5 +30,9 @@ public class UsuarioController {
             e.printStackTrace();
             return null;
         }
+    }
+
+    public List<UsuarioModel> listarUsuarios() {
+        return repository.listarTodos();
     }
 }

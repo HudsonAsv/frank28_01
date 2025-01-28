@@ -8,7 +8,7 @@ import java.util.List;
 public class LivroController {
     private LivroRepository repository = new LivroRepository();
 
-    public void adicionarLivro(String titulo, String autor, int paginas, String descricao, int isbn, String data) {
+    public void adicionarLivro(String titulo, String autor, int paginas, String descricao, long isbn, String data) {
         LivroModel livro = new LivroModel();
         livro.setTitulo(titulo);
         livro.setAutor(autor);
